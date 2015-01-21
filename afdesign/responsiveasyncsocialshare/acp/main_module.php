@@ -17,12 +17,12 @@ class main_module
 			{
 				trigger_error('FORM_INVALID');
 			}
-			//$config->set('banner_header', $request->variable('banner_header', '', true));
+			$config->set('rash_vbppcf', $request->variable('rash_vbppcf', '', true));
 			trigger_error($user->lang('RASH_SAVED') . adm_back_link($this->u_action));
 		}
 		$template->assign_vars(array(
 			'U_ACTION'				=> $this->u_action,
-			//'BANNER_HEADER'				=> $config['banner_header'],
+			'RASH_VBPPCF'				=> $config['rash_vbppcf'],
 		));
 	}
 }
