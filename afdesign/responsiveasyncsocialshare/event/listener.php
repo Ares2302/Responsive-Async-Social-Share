@@ -45,3 +45,4 @@ $this->template->assign_var('RASH_VBPPCF', $vbppcf);
 
 //codice end
 }
+}
