@@ -33,7 +33,7 @@ public function setup($event) {
 //file di lingua
 $lang_set_ext = $event['lang_set_ext'];
 $lang_set_ext[] = array(
-'ext_name' => 'bruninoit/pcabanner',
+'ext_name' => 'afdesign/responsiveasyncsocialshare',
 'lang_set' => 'common',
 );
 $event['lang_set_ext'] = $lang_set_ext;
