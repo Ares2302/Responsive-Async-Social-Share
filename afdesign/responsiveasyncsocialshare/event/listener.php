@@ -40,9 +40,8 @@ $event['lang_set_ext'] = $lang_set_ext;
 //lingua end
 
 //codice start
-
-//$header=$this->config['banner_header'];
-//$this->template->assign_var('BANNER_HEADER', $header);
+$vbppcf=$this->config['banner_header'];
+$this->template->assign_var('RASH_VBPPCF', $vbppcf);
 
 //codice end
 }
