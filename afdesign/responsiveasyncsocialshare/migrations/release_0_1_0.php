@@ -13,7 +13,7 @@ class release_0_1_0 extends \phpbb\db\migration\migration
 	public function update_data()
 	{
 		return array(
-			array('config.add', array('banner_header', '')),
+			array('config.add', array('rash_vbppcf', '')),
 		  array('module.add', array(
 				'acp',
 				'ACP_CAT_DOT_MODS',
