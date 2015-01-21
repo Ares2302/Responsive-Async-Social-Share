@@ -1,0 +1,40 @@
+<!--
+	Extension Name: Async Social Share
+	Style required:   prosilver (default phpBB3 style)
+	Phpbb Version: 3.1.2 or up
+	Original author:  AF Design ( http://alessandroferrara.it/ )
+-->
+<!-- QUESTO SCRIPT CARICA IN MODO ASINCRONO LE RISORSE RICHIESTE PER I PULSANTI DI CONDIVISIONE.
+RIMUOVI DALLE TUE PAGINE QUALSIASI RIFERIMENTO AGLI SDK DI FACEBOOK, GOOGLE PLUS, TWITTER, PINTEREST E POCKET 
+PER EVITARE CARICAMENTI DOPPI DELLE RISORSE. -->
+
+<script>
+(function(doc, script) {
+  var js, 
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+    // Google plus Async 
+    (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+    // Facebook SDK
+    add('//connect.facebook.net/it_IT/all.js#xfbml=1&appId=200103733347528', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js');
+	// Pinterest SDK
+	add('//assets.pinterest.com/js/pinit.js');
+	// Pocket SDK
+	add('//widgets.getpocket.com/v1/j/btn.js?v=1');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>

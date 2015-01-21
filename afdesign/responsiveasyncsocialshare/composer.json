@@ -1,0 +1,32 @@
+{
+    "name": "afdesign/responsiveasyncsocialshare",
+    "type": "phpbb-extension",
+    "description": "Aggiunge i pulsanti di condivisione (Facebook, Twitter, Google Plus, Pocket, Pinterest) nei Topic e in fondo la pagina principale del Forum. Full Responsive. Carica le risorse in modo asincrono per non rallentare il caricamento degli elementi principali della pagina",
+    "homepage": "https://alessandroferrara.it",
+    "version": "0.1",
+    "time": "21-01-2015",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "AF Design",
+            "email": "postmaster@alessandroferrara.it",
+            "homepage": "http://alessandroferrara.it",
+            "role": "Developer"
+        }
+ 
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "extra": {
+        "display-name": "Responsive Async Social Share",
+        "soft-require": {
+             "phpbb/phpbb": "3.1.2"
+        },
+        "version-check": {
+            "host": "alessandroferrara.it",
+            "directory": "/version/",
+            "filename": "responsiveasyncsocialshare.json"
+        }
+    }
+}
