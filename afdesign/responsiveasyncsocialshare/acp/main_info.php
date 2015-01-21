@@ -1,5 +1,5 @@
 <?php
-namespace afdesign\esponsiveasyncsocialshare\acp;
+namespace afdesign\responsiveasyncsocialshare\acp;
 class main_info
 {
 	function module()
