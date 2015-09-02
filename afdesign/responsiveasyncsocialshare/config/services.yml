@@ -1,0 +1,8 @@
+services:
+    afdesign.responsiveasyncsocialshare.listener:
+        class: afdesign\responsiveasyncsocialshare\event\listener
+        arguments:
+            - @config
+            - @template
+        tags:
+            - { name: event.listener }
